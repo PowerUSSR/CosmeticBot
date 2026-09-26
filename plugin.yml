@@ -1,0 +1,15 @@
+name: CosmeticBot
+version: 1.0
+main: org.mineserver.cosmeticbot.CosmeticBotPlugin
+api-version: 1.20
+depend: [Vault, ProtocolLib]
+softdepend: [ItemsAdder]
+commands:
+  cosmeticbot:
+    description: Управление Модельером
+    permission: cosmeticbot.admin
+    usage: /cosmeticbot <spawn|skin|info>
+permissions:
+  cosmeticbot.admin:
+    description: Управление Модельером
+    default: op
